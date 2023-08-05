@@ -546,7 +546,7 @@
 <span class="n">surface</span><span class="p">(</span><span class="n">fig</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">B</span><span class="p">)</span><span class="w"> </span><span class="c"># even a 3D plot works!</span>
 <span class="n">fig</span>
 </code></pre></div>
-<p><img alt="" src="../icdwtda.png"></p>
+<p><img alt="" src="../fwnluzq.png"></p>
 <p><a id="D-rasters-in-Makie-2"></a></p>
 <h3 id="3-d-rasters-in-makie">3-D rasters in Makie<a class="headerlink" href="#3-d-rasters-in-makie" title="Permanent link">¤</a></h3>
 <div class="admonition warning">
@@ -558,13 +558,13 @@
 <div class="highlight"><pre><span></span><code><span class="n">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RasterStack</span><span class="p">(</span><span class="kt">WorldClim</span><span class="p">{</span><span class="kt">Climate</span><span class="p">};</span><span class="w"> </span><span class="n">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Rasters</span><span class="o">.</span><span class="n">rplot</span><span class="p">(</span><span class="n">stack</span><span class="p">;</span><span class="w"> </span><span class="n">Axis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">aspect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DataAspect</span><span class="p">(),),)</span>
 </code></pre></div>
-<p><img alt="" src="../xjgukto.png"></p>
+<p><img alt="" src="../ldylpnf.png"></p>
 <p>You can pass any theming keywords in, which are interpreted by Makie appropriately.</p>
 <p>The plots seem a little squished here.  We provide a Makie theme which makes text a little smaller and has some other space-efficient attributes:</p>
 <div class="highlight"><pre><span></span><code><span class="n">CairoMakie</span><span class="o">.</span><span class="n">set_theme!</span><span class="p">(</span><span class="n">Rasters</span><span class="o">.</span><span class="n">theme_rasters</span><span class="p">())</span>
 <span class="n">Rasters</span><span class="o">.</span><span class="n">rplot</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
 </code></pre></div>
-<p><img alt="" src="../ihckszz.png"></p>
+<p><img alt="" src="../hmqligm.png"></p>
 <p>reset theme</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">Makie</span>
 <span class="n">Makie</span><span class="o">.</span><span class="n">set_theme!</span><span class="p">()</span>
@@ -610,7 +610,7 @@
 <li><code>colorrange = Makie.automatic</code>: The colormap for the heatmap.  This can be set to a vector of <code>(low, high)</code> if plotting a 3D raster or RasterStack.</li>
 <li><code>nan_color = :transparent</code>: The color which <code>NaN</code> values should take. Default to transparent.</li>
 </ul>
-<p><a target="_blank" href="https://github.com/rafaqz/Rasters.jl/blob/aa59905583dfe6bba7d0ca52b75c3900cf1dfcc0/ext/RastersMakieExt/plotrecipes.jl#L29-L50" class="documenter-source">source</a><br></p>
+<p><a target="_blank" href="https://github.com/rafaqz/Rasters.jl/blob/df03b413b141d451b0552d34da25857888d40f32/ext/RastersMakieExt/plotrecipes.jl#L29-L50" class="documenter-source">source</a><br></p>
 <hr>
 <p><em>This page was generated using <a href="https://github.com/fredrikekre/Literate.jl">Literate.jl</a>.</em></p></div>
 
@@ -693,7 +693,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.220ee61c.min.js"></script>
