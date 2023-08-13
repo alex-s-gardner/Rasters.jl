@@ -264,12 +264,39 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         Home
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rastersjl" class="md-nav__link">
+    Rasters.jl
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -297,6 +324,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          User Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="scripts/generated/basics/data_sources/" class="md-nav__link">
         Data Sources
@@ -304,11 +360,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -319,11 +374,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -334,11 +388,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -349,11 +402,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -364,11 +416,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -376,6 +427,13 @@
       <a href="scripts/generated/basics/plot_makie/" class="md-nav__link">
         Examples with Makie
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -412,8 +470,21 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rastersjl" class="md-nav__link">
+    Rasters.jl
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -428,31 +499,30 @@
                   
 
 
-<div><p><a id="Rasters.jl"></a></p>
+  <h1>Home</h1>
+
+<div><p><img src="/scripts/generated/basics/aus_trim.png" align="center" style="padding-right:10px" width='100%"'></p>
+<p><a id="Rasters.jl"></a></p>
 <p><a id="Rasters.jl-1"></a></p>
-<h1 id="rastersjl">Rasters.jl<a class="headerlink" href="#rastersjl" title="Permanent link">¤</a></h1>
+<h2 id="rastersjl">Rasters.jl<a class="headerlink" href="#rastersjl" title="Permanent link">¤</a></h2>
+<p><a href="https://github.com/rafaqz/Rasters.jl/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg"></a> <a href="https://rafaqz.github.io/Rasters.jl/stable"><img alt="" src="https://img.shields.io/badge/docs-stable-blue.svg"></a> <a href="https://rafaqz.github.io/Rasters.jl/dev"><img alt="" src="https://img.shields.io/badge/docs-dev-blue.svg"></a> <a href="https://github.com/rafaqz/Rasters.jl/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/rafaqz/Rasters.jl/actions/workflows/ci.yml/badge.svg"></a> <a href="https://codecov.io/gh/rafaqz/Rasters.jl"><img alt="Codecov" src="https://codecov.io/gh/rafaqz/Rasters.jl/branch/main/graph/badge.svg"></a> <a href="https://github.com/JuliaTesting/Aqua.jl"><img alt="Aqua.jl Quality Assurance" src="https://img.shields.io/badge/Aquajl-%F0%9F%8C%A2-aqua.svg"></a> <a href="https://pkgs.genieframework.com?packages=Rasters"><img alt="Downloads" src="https://shields.io/endpoint?url=https://pkgs.genieframework.com/api/v1/badge/Rasters&amp;label=Downloads"></a></p>
 <p><a href="https://rafaqz.github.io/Rasters.jl/dev">Rasters.jl</a> defines common types and methods for reading, writing and manipulating rasterized spatial data. </p>
 <p>These currently include raster arrays like <code>GeoTIFF</code> and <code>NetCDF</code>, <code>R grd</code> files,  multi-layered stacks, and multi-file series of arrays and stacks. </p>
-<p><img alt="EarthEnv HabitatHeterogeneity layers trimmed to Australia" src="https://rafaqz.github.io/Rasters.jl/stable/trim_example_after.png"></p>
-<p><em>A RasterStack of EarthEnv HabitatHeterogeneity layers, trimmed to Australia and plotted with Plots.jl</em></p>
-<details class="info">
-<summary>Data-source abstraction</summary>
-<p>Rasters provides a standardised interface that allows many source data types to
-be used with identical syntax.</p>
+<div class="admonition info">
+<p class="admonition-title">Data-source abstraction</p>
+<p>Rasters provides a standardised interface that allows many source data types to be used with identical syntax.</p>
 <ul>
-<li>Scripts and packages building on Rasters.jl can treat <code>Raster</code>,
-<code>RasterStack</code>, and <code>RasterSeries</code> as black boxes.</li>
-<li>The data could hold GeoTiff or NetCDF files, <code>Array</code>s in memory or
-    <code>CuArray</code>s on the GPU - they will all behave in the same way.</li>
-<li><code>RasterStack</code> can be backed by a Netcdf or HDF5 file, or a <code>NamedTuple</code> of
-    <code>Raster</code> holding <code>.tif</code> files, or all <code>Raster</code> in memory.</li>
-<li>Users do not have to deal with the specifics of spatial file types.</li>
-<li><code>Projected</code> lookups with Cylindrical projections can by indexed using other Cylindrical projections
-by setting the <code>mappedcrs</code> keyword on construction. You don't need to know the underlying
-projection, the conversion is handled automatically. This means lat/lon
-<code>EPSG(4326)</code> can be used seamlessly if you need that.</li>
+<li>Scripts and packages building on Rasters.jl can treat <code>Raster</code>,</li>
 </ul>
-</details>
+<p><code>RasterStack</code>, and <code>RasterSeries</code> as black boxes.</p>
+<ul>
+<li>The data could hold GeoTiff or NetCDF files, <code>Array</code>s in memory or   <code>CuArray</code>s on the GPU - they will all behave in the same way.</li>
+<li><code>RasterStack</code> can be backed by a Netcdf or HDF5 file, or a <code>NamedTuple</code> of   <code>Raster</code> holding <code>.tif</code> files, or all <code>Raster</code> in memory.</li>
+<li>Users do not have to deal with the specifics of spatial file types.</li>
+<li><code>Projected</code> lookups with Cylindrical projections can by indexed using other Cylindrical projections</li>
+</ul>
+<p>by setting the <code>mappedcrs</code> keyword on construction. You don't need to know the underlying projection, the conversion is handled automatically. This means lat/lon <code>EPSG(4326)</code> can be used seamlessly if you need that.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Packages extensions and Rasters 0.8 and onwards</p>
 <p>On Julia 1.9 we can put additional packages in extensions, so the code only loads when you load a specific package. Rasters.jl was always intended to work like this, and its finally possible. This reduced package <code>using</code> time from many seconds to well under a second.</p>
@@ -554,7 +624,7 @@ projection, the conversion is handled automatically. This means lat/lon
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.annotate", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "header.autohide"], "search": "assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.annotate", "navigation.expand", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "header.autohide"], "search": "assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.220ee61c.min.js"></script>

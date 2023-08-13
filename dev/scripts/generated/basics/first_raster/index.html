@@ -347,6 +347,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          User Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../data_sources/" class="md-nav__link">
         Data Sources
@@ -354,11 +383,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -369,11 +397,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -384,11 +411,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -399,11 +425,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -414,11 +439,10 @@
     </li>
   
 
-    
-      
-      
-      
-
+            
+          
+            
+              
   
   
   
@@ -426,6 +450,13 @@
       <a href="../plot_makie/" class="md-nav__link">
         Examples with Makie
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -535,13 +566,13 @@
   Ti Sampled{DateTime} DateTime("2001-01-01T00:00:00"):Month(1):DateTime("2002-01-01T00:00:00") ForwardOrdered Regular Points
 extent: Extent(X = (25, 30), Y = (25, 30), Ti = (DateTime("2001-01-01T00:00:00"), DateTime("2002-01-01T00:00:00")))missingval: missingparent:
 [:, :, 1]
-     25         26         27         28         29         30
- 25   0.240805   0.389121   0.658829   0.340844   0.586403   0.744818
- 26   0.565734   0.569249   0.23333    0.866855   0.115437   0.888943
- 27   0.449977   0.320111   0.346009   0.867522   0.521999   0.373885
- 28   0.531745   0.623918   0.737479   0.356553   0.96767    0.750201
- 29   0.670246   0.22024    0.155989   0.159368   0.266124   0.64682
- 30   0.20998    0.942812   0.448835   0.970352   0.120227   0.279043
+     25         26         27         28         29          30
+ 25   0.215935   0.156268   0.85062    0.967578   0.956849    0.484271
+ 26   0.735524   0.691102   0.145111   0.530978   0.210337    0.96721
+ 27   0.4768     0.907813   0.13198    0.37479    0.0264504   0.622396
+ 28   0.963319   0.797123   0.61029    0.242157   0.182684    0.591758
+ 29   0.199189   0.181829   0.144243   0.751246   0.650643    0.18565
+ 30   0.307769   0.672773   0.612838   0.322693   0.782245    0.18975
 [and 12 more slices...]
 </code></pre></div>
 <p><a id="Getting-the-lookup-array-from-dimensions"></a></p>
@@ -565,13 +596,13 @@ wrapping: 25:1:30
 and reference dimensions: 
   Ti Sampled{DateTime} DateTime("2001-01-01T00:00:00"):Month(1):DateTime("2001-01-01T00:00:00") ForwardOrdered Regular Points
 extent: Extent(X = (25, 30), Y = (25, 30))missingval: missingparent:
-     25         26         27         28         29         30
- 25   0.240805   0.389121   0.658829   0.340844   0.586403   0.744818
- 26   0.565734   0.569249   0.23333    0.866855   0.115437   0.888943
- 27   0.449977   0.320111   0.346009   0.867522   0.521999   0.373885
- 28   0.531745   0.623918   0.737479   0.356553   0.96767    0.750201
- 29   0.670246   0.22024    0.155989   0.159368   0.266124   0.64682
- 30   0.20998    0.942812   0.448835   0.970352   0.120227   0.279043
+     25         26         27         28         29          30
+ 25   0.215935   0.156268   0.85062    0.967578   0.956849    0.484271
+ 26   0.735524   0.691102   0.145111   0.530978   0.210337    0.96721
+ 27   0.4768     0.907813   0.13198    0.37479    0.0264504   0.622396
+ 28   0.963319   0.797123   0.61029    0.242157   0.182684    0.591758
+ 29   0.199189   0.181829   0.144243   0.751246   0.650643    0.18565
+ 30   0.307769   0.672773   0.612838   0.322693   0.782245    0.18975
 </code></pre></div>
 <p>also</p>
 <div class="highlight"><pre><span></span><code><span class="n">ras</span><span class="p">[</span><span class="n">Ti</span><span class="o">=</span><span class="mi">1</span><span class="p">]</span>
@@ -582,13 +613,13 @@ extent: Extent(X = (25, 30), Y = (25, 30))missingval: missingparent:
 and reference dimensions: 
   Ti Sampled{DateTime} DateTime("2001-01-01T00:00:00"):Month(1):DateTime("2001-01-01T00:00:00") ForwardOrdered Regular Points
 extent: Extent(X = (25, 30), Y = (25, 30))missingval: missingparent:
-     25         26         27         28         29         30
- 25   0.240805   0.389121   0.658829   0.340844   0.586403   0.744818
- 26   0.565734   0.569249   0.23333    0.866855   0.115437   0.888943
- 27   0.449977   0.320111   0.346009   0.867522   0.521999   0.373885
- 28   0.531745   0.623918   0.737479   0.356553   0.96767    0.750201
- 29   0.670246   0.22024    0.155989   0.159368   0.266124   0.64682
- 30   0.20998    0.942812   0.448835   0.970352   0.120227   0.279043
+     25         26         27         28         29          30
+ 25   0.215935   0.156268   0.85062    0.967578   0.956849    0.484271
+ 26   0.735524   0.691102   0.145111   0.530978   0.210337    0.96721
+ 27   0.4768     0.907813   0.13198    0.37479    0.0264504   0.622396
+ 28   0.963319   0.797123   0.61029    0.242157   0.182684    0.591758
+ 29   0.199189   0.181829   0.144243   0.751246   0.650643    0.18565
+ 30   0.307769   0.672773   0.612838   0.322693   0.782245    0.18975
 </code></pre></div>
 <p>or and interval of indices using the syntax =a:b or (a:b)</p>
 <div class="highlight"><pre><span></span><code><span class="n">ras</span><span class="p">[</span><span class="n">Ti</span><span class="p">(</span><span class="mi">1</span><span class="o">:</span><span class="mi">10</span><span class="p">)]</span>
@@ -599,13 +630,13 @@ extent: Extent(X = (25, 30), Y = (25, 30))missingval: missingparent:
   Ti Sampled{DateTime} DateTime("2001-01-01T00:00:00"):Month(1):DateTime("2001-10-01T00:00:00") ForwardOrdered Regular Points
 extent: Extent(X = (25, 30), Y = (25, 30), Ti = (DateTime("2001-01-01T00:00:00"), DateTime("2001-10-01T00:00:00")))missingval: missingparent:
 [:, :, 1]
-     25         26         27         28         29         30
- 25   0.240805   0.389121   0.658829   0.340844   0.586403   0.744818
- 26   0.565734   0.569249   0.23333    0.866855   0.115437   0.888943
- 27   0.449977   0.320111   0.346009   0.867522   0.521999   0.373885
- 28   0.531745   0.623918   0.737479   0.356553   0.96767    0.750201
- 29   0.670246   0.22024    0.155989   0.159368   0.266124   0.64682
- 30   0.20998    0.942812   0.448835   0.970352   0.120227   0.279043
+     25         26         27         28         29          30
+ 25   0.215935   0.156268   0.85062    0.967578   0.956849    0.484271
+ 26   0.735524   0.691102   0.145111   0.530978   0.210337    0.96721
+ 27   0.4768     0.907813   0.13198    0.37479    0.0264504   0.622396
+ 28   0.963319   0.797123   0.61029    0.242157   0.182684    0.591758
+ 29   0.199189   0.181829   0.144243   0.751246   0.650643    0.18565
+ 30   0.307769   0.672773   0.612838   0.322693   0.782245    0.18975
 [and 9 more slices...]
 </code></pre></div>
 <p><a id="Select-by-value"></a></p>
@@ -619,13 +650,13 @@ extent: Extent(X = (25, 30), Y = (25, 30), Ti = (DateTime("2001-01-01T00:00:00")
 and reference dimensions: 
   Ti Sampled{DateTime} DateTime("2001-01-01T00:00:00"):Month(1):DateTime("2001-01-01T00:00:00") ForwardOrdered Regular Points
 extent: Extent(X = (25, 30), Y = (25, 30))missingval: missingparent:
-     25         26         27         28         29         30
- 25   0.240805   0.389121   0.658829   0.340844   0.586403   0.744818
- 26   0.565734   0.569249   0.23333    0.866855   0.115437   0.888943
- 27   0.449977   0.320111   0.346009   0.867522   0.521999   0.373885
- 28   0.531745   0.623918   0.737479   0.356553   0.96767    0.750201
- 29   0.670246   0.22024    0.155989   0.159368   0.266124   0.64682
- 30   0.20998    0.942812   0.448835   0.970352   0.120227   0.279043
+     25         26         27         28         29          30
+ 25   0.215935   0.156268   0.85062    0.967578   0.956849    0.484271
+ 26   0.735524   0.691102   0.145111   0.530978   0.210337    0.96721
+ 27   0.4768     0.907813   0.13198    0.37479    0.0264504   0.622396
+ 28   0.963319   0.797123   0.61029    0.242157   0.182684    0.591758
+ 29   0.199189   0.181829   0.144243   0.751246   0.650643    0.18565
+ 30   0.307769   0.672773   0.612838   0.322693   0.782245    0.18975
 </code></pre></div>
 <p>More options are available, like <code>Near</code>, <code>Contains</code> and <code>Where</code>.</p>
 <div class="admonition info">
@@ -703,7 +734,7 @@ parent:
 <p>Note the space between .. -12</p>
 <div class="highlight"><pre><span></span><code><span class="n">Makie</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">madagascar</span><span class="p">)</span>
 </code></pre></div>
-<p><img alt="" src="../dmmroyx.png"></p>
+<p><img alt="" src="../opwbgce.png"></p>
 <hr>
 <p><em>This page was generated using <a href="https://github.com/fredrikekre/Literate.jl">Literate.jl</a>.</em></p></div>
 
@@ -786,7 +817,7 @@ parent:
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.expand", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.220ee61c.min.js"></script>
