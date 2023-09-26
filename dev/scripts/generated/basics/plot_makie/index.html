@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
     
     
       
@@ -28,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d451bc0e.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -311,14 +311,16 @@
     
     
     
+    
+    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
+          
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
@@ -662,7 +664,7 @@
 <span class="n">surface</span><span class="p">(</span><span class="n">fig</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">B</span><span class="p">)</span><span class="w"> </span><span class="c"># even a 3D plot works!</span>
 <span class="n">fig</span>
 </code></pre></div>
-<p><img alt="" src="../gawqgvn.png"></p>
+<p><img alt="" src="../aflvbgi.png"></p>
 <p><a id="D-rasters-in-Makie-2"></a></p>
 <h3 id="3-d-rasters-in-makie">3-D rasters in Makie<a class="headerlink" href="#3-d-rasters-in-makie" title="Permanent link">¤</a></h3>
 <div class="admonition warning">
@@ -674,13 +676,13 @@
 <div class="highlight"><pre><span></span><code><span class="n">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RasterStack</span><span class="p">(</span><span class="kt">WorldClim</span><span class="p">{</span><span class="kt">Climate</span><span class="p">};</span><span class="w"> </span><span class="n">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Rasters</span><span class="o">.</span><span class="n">rplot</span><span class="p">(</span><span class="n">stack</span><span class="p">;</span><span class="w"> </span><span class="n">Axis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">aspect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DataAspect</span><span class="p">(),),)</span>
 </code></pre></div>
-<p><img alt="" src="../vjrafzd.png"></p>
+<p><img alt="" src="../cxseord.png"></p>
 <p>You can pass any theming keywords in, which are interpreted by Makie appropriately.</p>
 <p>The plots seem a little squished here.  We provide a Makie theme which makes text a little smaller and has some other space-efficient attributes:</p>
 <div class="highlight"><pre><span></span><code><span class="n">CairoMakie</span><span class="o">.</span><span class="n">set_theme!</span><span class="p">(</span><span class="n">Rasters</span><span class="o">.</span><span class="n">theme_rasters</span><span class="p">())</span>
 <span class="n">Rasters</span><span class="o">.</span><span class="n">rplot</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
 </code></pre></div>
-<p><img alt="" src="../gxdabnb.png"></p>
+<p><img alt="" src="../yeuwzjm.png"></p>
 <p>reset theme</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">Makie</span>
 <span class="n">Makie</span><span class="o">.</span><span class="n">set_theme!</span><span class="p">()</span>
@@ -727,7 +729,7 @@
 <li><code>colorrange = Makie.automatic</code>: The colormap for the heatmap.  This can be set to a vector of <code>(low, high)</code> if plotting a 3D raster or RasterStack.</li>
 <li><code>nan_color = :transparent</code>: The color which <code>NaN</code> values should take. Default to transparent.</li>
 </ul>
-<p><a target="_blank" href="https://github.com/rafaqz/Rasters.jl/blob/a0f618496eabf24f4b7b59a3bf0f0e5d78f29186/ext/RastersMakieExt/plotrecipes.jl#L29-L51" class="documenter-source">source</a><br></p>
+<p><a target="_blank" href="https://github.com/rafaqz/Rasters.jl/blob/a953e1411c9ce3d885b32b6c13462d1584747c02/ext/RastersMakieExt/plotrecipes.jl#L29-L51" class="documenter-source">source</a><br></p>
 <p><a id="using-more-vanilla-Makie"></a></p>
 <p><a id="using-more-vanilla-Makie-1"></a></p>
 <h2 id="using-more-vanilla-makie">using more vanilla Makie<a class="headerlink" href="#using-more-vanilla-makie" title="Permanent link">¤</a></h2>
@@ -794,7 +796,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../gbif_wflow/" class="md-footer__link md-footer__link--prev" aria-label="Previous: A basic species distribution modelling workflow" rel="prev">
+          <a href="../gbif_wflow/" class="md-footer__link md-footer__link--prev" aria-label="Previous: A basic species distribution modelling workflow">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -811,7 +813,7 @@
         
         
           
-          <a href="../../../../reference/" class="md-footer__link md-footer__link--next" aria-label="Next: API Reference" rel="next">
+          <a href="../../../../reference/" class="md-footer__link md-footer__link--next" aria-label="Next: API Reference">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
@@ -850,10 +852,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.expand", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.expand", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.726fbb30.min.js"></script>
       
         <script src="../../../../javascripts/mathjax.js"></script>
       
