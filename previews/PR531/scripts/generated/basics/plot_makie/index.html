@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.2">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d451bc0e.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.79e020e9.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.a5377069.min.css">
@@ -664,7 +664,7 @@
 <span class="n">surface</span><span class="p">(</span><span class="n">fig</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">B</span><span class="p">)</span><span class="w"> </span><span class="c"># even a 3D plot works!</span>
 <span class="n">fig</span>
 </code></pre></div>
-<p><img alt="" src="../dqsrpej.png"></p>
+<p><img alt="" src="../oxhnsfk.png"></p>
 <p><a id="D-rasters-in-Makie-2"></a></p>
 <h3 id="3-d-rasters-in-makie">3-D rasters in Makie<a class="headerlink" href="#3-d-rasters-in-makie" title="Permanent link">¤</a></h3>
 <div class="admonition warning">
@@ -676,13 +676,13 @@
 <div class="highlight"><pre><span></span><code><span class="n">stack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">RasterStack</span><span class="p">(</span><span class="kt">WorldClim</span><span class="p">{</span><span class="kt">Climate</span><span class="p">};</span><span class="w"> </span><span class="n">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Rasters</span><span class="o">.</span><span class="n">rplot</span><span class="p">(</span><span class="n">stack</span><span class="p">;</span><span class="w"> </span><span class="n">Axis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">aspect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DataAspect</span><span class="p">(),),)</span>
 </code></pre></div>
-<p><img alt="" src="../ijbzulo.png"></p>
+<p><img alt="" src="../rdpzwev.png"></p>
 <p>You can pass any theming keywords in, which are interpreted by Makie appropriately.</p>
 <p>The plots seem a little squished here.  We provide a Makie theme which makes text a little smaller and has some other space-efficient attributes:</p>
 <div class="highlight"><pre><span></span><code><span class="n">CairoMakie</span><span class="o">.</span><span class="n">set_theme!</span><span class="p">(</span><span class="n">Rasters</span><span class="o">.</span><span class="n">theme_rasters</span><span class="p">())</span>
 <span class="n">Rasters</span><span class="o">.</span><span class="n">rplot</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span>
 </code></pre></div>
-<p><img alt="" src="../dvsucvt.png"></p>
+<p><img alt="" src="../hiyzwnt.png"></p>
 <p>reset theme</p>
 <div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">Makie</span>
 <span class="n">Makie</span><span class="o">.</span><span class="n">set_theme!</span><span class="p">()</span>
@@ -729,7 +729,7 @@
 <li><code>colorrange = Makie.automatic</code>: The colormap for the heatmap.  This can be set to a vector of <code>(low, high)</code> if plotting a 3D raster or RasterStack.</li>
 <li><code>nan_color = :transparent</code>: The color which <code>NaN</code> values should take. Default to transparent.</li>
 </ul>
-<p><a target="_blank" href="https://github.com/rafaqz/Rasters.jl/blob/bbcfd8bf244e0da14f62cacf1a5adb1b78d10bb2/ext/RastersMakieExt/plotrecipes.jl#L29-L51" class="documenter-source">source</a><br></p>
+<p><a target="_blank" href="https://github.com/rafaqz/Rasters.jl/blob/efd9d327e5f656dc7e83604b3e1d5bdfcb070127/ext/RastersMakieExt/plotrecipes.jl#L29-L51" class="documenter-source">source</a><br></p>
 <p><a id="using-more-vanilla-Makie"></a></p>
 <p><a id="using-more-vanilla-Makie-1"></a></p>
 <h2 id="using-more-vanilla-makie">using more vanilla Makie<a class="headerlink" href="#using-more-vanilla-makie" title="Permanent link">¤</a></h2>
@@ -782,10 +782,10 @@
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-            Back to top
-          </button>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -852,10 +852,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+    
     <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.expand", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.726fbb30.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.6eac0284.min.js"></script>
       
         <script src="../../../../javascripts/mathjax.js"></script>
       
